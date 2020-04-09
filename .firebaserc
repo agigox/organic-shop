@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "mescoursesonline": {
+      "hosting": {
+        "organic-shop": [
+          "mescoursesonline"
+        ]
+      }
+    }
+  }
+}
