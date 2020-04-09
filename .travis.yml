@@ -10,5 +10,8 @@ cache:
     - ./node_modules
 install:
   - npm install
+  - npm install -g firebase-tools
 script:
   - npm run test -- --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
+after_success:
+  - firebase deploy --token $FIREBASE_TOKEN
