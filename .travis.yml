@@ -13,5 +13,6 @@ install:
   - npm install -g firebase-tools
 script:
   - npm run test -- --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
+  - ng build
 after_success:
   - firebase deploy --token $FIREBASE_TOKEN
